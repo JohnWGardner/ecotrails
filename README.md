@@ -1,10 +1,9 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-**Students:** Hodo Ismail, Sol Rayet, Paul Jebb, John Gardner  
-**Date:** 21/10/2024  
+**Students:** John Gardner  
+**Date:** 25/11/2024  
 **Cohort:** WECA - Full Stack Software Developer: Skills Bootcamp  
-**Project:** Hackathon2 Weather App: HTML, CSS, Bootstrap, JS
-![Screenshot 2024-10-24 at 13 10 28](https://github.com/user-attachments/assets/72e8bd44-1979-420f-8d4a-00d1ea07eae4)
+**Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django
 
 ---
 
