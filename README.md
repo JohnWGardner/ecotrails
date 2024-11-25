@@ -1,131 +1,311 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome John Gardner,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+**Students:** Hodo Ismail, Sol Rayet, Paul Jebb, John Gardner  
+**Date:** 21/10/2024  
+**Cohort:** WECA - Full Stack Software Developer: Skills Bootcamp  
+**Project:** Hackathon2 Weather App: HTML, CSS, Bootstrap, JS
+![Screenshot 2024-10-24 at 13 10 28](https://github.com/user-attachments/assets/72e8bd44-1979-420f-8d4a-00d1ea07eae4)
 
 ---
 
-Happy coding!
+# Project Goals
+
+![project_board](https://github.com/user-attachments/assets/7c81d773-2298-499e-8972-af15f8b58b60)
+
+## 1. Understand the Purpose:
+
+- Provide users with real-time weather data and a 5-day forecast.
+- Present information in a straightforward, organized format that is easy to understand and navigate.
+
+## 2. Developer Key Goals:
+
+- Fetch real-time weather data and a simple, easy-to-digest 5-day weather forecast.
+- Design and implement the webpage using Bootstrap 4.6 for responsiveness and layout.
+- Integrate external API for dynamic data (OpenWeatherMap API).
+- Implement error handling for invalid city inputs and show meaningful error messages.
+
+---
+
+# Features
+
+## 1. Home Page
+
+- A weather search form using Bootstrap components, allowing users to input a city and retrieve weather data.
+  ![Weather Search Form](./assets/images/weather-search-form.png)
+- A real-time display of current weather data, including temperature, condition, humidity, and wind speed.
+  ![Current Weather Data ](./assets/images/Current-Weather.png)
+- A 5-day weather forecast, using Bootstrap cards, showing daily conditions, temperatures, humidity, and wind speeds.
+
+  ![5-day Forecast](./assets/images/5-day-forecast.png)
+
+## 2. Additional Features:
+
+- Responsiveness ensured using Bootstrap 4.6, so the app works across various screen sizes.
+- Clear navigation and intuitive UI with accessible forms.
+- Fetching data dynamically from the OpenWeatherMap API.
+- Error handling with messages if the city is not found or if there’s an API issue.
+
+---
+
+# UX/UI
+
+## 1. Target Audience
+
+- Users who want real-time weather data and a 5-day forecast for planning their daily or weekly activities.
+
+## 2. User Stories
+
+### Real-time Weather Data
+
+**As a user**, I want to input my city name and get the current weather data so that I can plan my immediate activities.
+
+- **Acceptance Criteria**:
+  - User can enter a city name into a search box.
+  - Upon submitting, the current weather data for the specified city is displayed.
+  - Data includes temperature, weather conditions, humidity, and wind speed.
+  - Information updates in real-time.
+
+**As a user**, I want to see the current temperature, so I know how to dress appropriately.
+
+- **Acceptance Criteria**:
+  - The temperature is displayed in degrees Celsius.
+  - The temperature updates to reflect real-time data.
+
+**As a user**, I want to see the current weather conditions (e.g., sunny, rainy, cloudy), so I can decide if I need an umbrella or sunglasses.
+
+- **Acceptance Criteria**:
+  - Weather conditions are displayed using descriptive text and relevant icons.
+  - The information updates to reflect real-time conditions.
+
+### 5-day Weather Forecast
+
+**As a user**, I want to see the temperature forecast for the next five days, so I can plan my week ahead.
+
+- **Acceptance Criteria**:
+  - The 5-day forecast is displayed upon request.
+  - Each day's forecast includes the temperature, weather conditions, humidity, and wind speed.
+  - The forecast updates regularly to reflect accurate data.
+
+### Interactive Map
+
+**As a user**, I want to be able to click on a map to select my location, so I can get weather data for that specific point.
+
+- **Acceptance Criteria**:
+  - An interactive map is available for users to select their location.
+  - Selecting a location on the map updates the weather data to that specific point.
+
+### Integration with Weather API
+
+**As a user**, I want the weather data to update in real-time, so I always have the latest information.
+
+- **Acceptance Criteria**:
+  - The site pulls real-time data from a reliable weather API.
+  - Data refreshes at regular intervals to ensure accuracy.
+
+**As a user**, I want the weather data to be accurate, so I can rely on the information provided by the site.
+
+- **Acceptance Criteria**:
+  - Weather data is sourced from a trusted and reliable weather API.
+  - API error handling is implemented to manage data retrieval failures.
+
+### User Interface and Experience
+
+**As a user**, I want the site to be visually appealing, so it's pleasant to use.
+
+- **Acceptance Criteria**:
+  - The site's design is clean and modern with weather icons and graphics.
+  - Visual elements are aligned and consistent.
+
+**As a user**, I want the weather information to be presented in a clear and easy-to-read format, so I can quickly understand the data.
+
+- **Acceptance Criteria**:
+  - Weather data is displayed in a structured and organized manner.
+  - Fonts, colors, and layout enhance readability.
+
+**As a user**, I want the site to load quickly, so I don't have to wait long to get the information I need.
+
+- **Acceptance Criteria**:
+  - The site is optimized for fast loading times.
+  - Performance is regularly monitored and improved.
+
+**As a user**, I want the site to work well on my smartphone, so I can check the weather on the go.
+
+- **Acceptance Criteria**:
+  - The site is fully responsive, adapting to various screen sizes.
+  - All functionalities work seamlessly on both desktop and mobile devices.
+
+### Site Owner Stories
+
+#### API Integration
+
+**As a site owner**, I want to integrate a reliable weather API, so I can provide accurate weather data.
+
+- **Acceptance Criteria**:
+  - The weather API is integrated and functional.
+  - API requests are managed efficiently and handle errors gracefully.
+
+#### User Interface
+
+**As a site owner**, I want to design a clean and intuitive interface, so users can easily navigate the site.
+
+- **Acceptance Criteria**:
+  - The interface is user-friendly and intuitive.
+  - Navigation is straightforward and consistent.
+
+#### Performance and Reliability
+
+**As a site owner**, I want the site to be optimized for speed, so users have a fast experience.
+
+- **Acceptance Criteria**:
+  - The site is optimized for quick load times.
+  - Regular performance checks and optimizations are in place.
+
+**As a site owner**, I want the site to be reliable and have minimal downtime, so users can access it whenever they need.
+
+- **Acceptance Criteria**:
+  - The site is hosted on a reliable platform.
+  - Downtime is minimized through regular maintenance and monitoring.
+
+---
+
+# Technologies Used
+
+- **HTML5**: For the basic structure of the app.
+- **CSS3**: For layout, color schemes, and basic styles.
+- **Bootstrap 4.6**: For responsive layout, styling, and form components.
+- **JavaScript (ES6+)**: For the dynamic weather display and API integration.
+- **OpenWeatherMap API**: To fetch real-time weather and forecast data.
+- **GitHub Pages**: For deployment of the live app.
+
+---
+
+# API Integration
+
+- The OpenWeatherMap API is used to retrieve real-time weather and 5-day forecast data based on user input.
+- The app uses `fetch` to make asynchronous API calls, processes the JSON responses, and dynamically updates the DOM with weather data.
+
+---
+
+# Design Choices
+
+## Color Scheme
+
+- Warm color scheme used for forecast cards to enhance visual appeal.
+
+## Fonts
+
+- Standard fonts for readability and consistent design.
+- Slightly larger, bold fonts for key weather information to improve visibility.
+
+## Wireframes
+
+- Wireframes were created to design the weather app layout:  
+  `/workspace/Weather_Web_App/assets/wireframes`
+  ![Wireframes](./assets/wireframes/Wireframes.png)
+
+---
+
+# Testing
+
+## HTML Validation
+
+- Initial HTML validation was done using the W3C Markup Validation Service.
+
+![Screenshot 2024-10-24 at 13 57 08](https://github.com/user-attachments/assets/3c9dd41d-3082-4c14-b360-0548f2e0fe53)
+
+## CSS Validation
+
+- CSS validation was performed using W3C's CSS Validator. http://jigsaw.w3.org/css-validator/validator$link
+
+![Screenshot 2024-10-24 at 13 30 00](https://github.com/user-attachments/assets/443f2f9c-cbc5-42ea-8c11-0c44b7668f22)
+
+## Accessibility
+
+- Google Lighthouse audit reports an accessibility score of 87%, ensuring users with disabilities can access the site effectively.
+
+## Browser and Device Testing
+
+- Tested on multiple devices and browsers for responsiveness:
+  - iPhone
+  - Desktop
+  - Chrome Developer Tools (simulating various devices)
+  - Browsers: Chrome, Edge, and Safari
+- Site functioned as expected across all tested platforms.
+
+---
+
+# Bugs
+
+## Five day forecast
+
+- When Adding the JS function for the 5 day forecast errors 401 and 404 were thrown.
+  By adding getForecast(search.box) to the event listener we were able to make progress
+  but still had error 401.
+  We commented out response catch.error at line 50 and this removed the final error.
+
+- There was a single line of duplicate JS code which was preventing the function from  
+  runnning correctly. When the duplicate line was removed and an event listener added this resolved the issue.
+
+  ## Forecast loop
+
+  - We created individual Const for date/time, forecast, temperature, description,
+    humidity and wind speed. Initial tests caused the code to print directly to the page.
+    Further testing showed that we need to tell the function to run in english GB.
+    Having corrected this it was no longer printing to screen but the cards were displaying the incorrect day of the week on the forecast cards.
+
+    Adding a let outside of the for loop and a const to grab the relevant HTML information
+    along with a const outside of the for loop to grab further information by ID and passing that into the HTML resolved this issue.
+
+  ## Footer
+
+  ### Temporary fix
+
+  - The footer was overlapping with the last forecast card.
+  - Adjusted padding and CSS functions in order attempt a fix. This showed no result.
+    removed fixed position in HTML and again adjusted CSS to have a sticky or static position which also showed no result.
+    Replaced fixed-bottom in HTML and attempted a temporary fix using br between the final
+    card and the footer. After adding five of these it has resolved the overlap issue. This will be reviewed in a later iteration.
+
+## Use my location
+
+- We identified that this function was not working. Using dev tools we were able to identify
+  that this was due to a lack of information relating to Longitude and latitude.
+
+- By adding an if and else function to both the forecast and five day forecast w hoped t to
+  accurately pinpoint a users location by city.
+  This initially gave no reponse as the position and the latitude had not been correctly defined. so we altered the temperal literals for the latitude and longitude which then threw a further error 404 under our check weather function.
+  As this appeared to be a URL issue we altered fom APIurl to geoForecastURL and geoWeather URL respectively.
+  This fixed the cards by showing weather data but assigned no location and the information was not accurate to the testers location having checked this with other existing weather applications.
+
+# Deployment
+
+The app was deployed using **GitHub Pages**:
+
+1. In the GitHub repository, navigate to **Settings**.
+2. Select **Pages** from the left-hand menu.
+3. Choose the **Main Branch** as the source, then save.
+4. The page will automatically be published.
+
+- **Live App URL:** [Weather Web App](https://johnwgardner.github.io/Weather_Web_App)
+
+- We used Agile methodology, with early deployment to see every change live, aiding the development process.
+
+---
+
+# Future Enhancements:
+- Geo Location: Although the geo-location feature is functional, it currently retrieves incorrect data and city names. Given more time, we would diagnose and resolve this issue to ensure accurate data retrieval.
+- Interactive Map: With additional time, we plan to integrate an interactive map that allows users to hover over and click on a city to get weather conditions.
+
+---
+
+# Credits
+
+- **OpenWeatherMap API**: Used for fetching live weather data.
+- **Bootstrap**: For layout, components, and responsive design.
+- **Code Institute**: For project templates and guidance.
+- **Font Awesome**: For fonts.
+- **Favicon**: For favicon image.
+- **Freepik**: For jumbotron image.
+- **Team Members**: Hodo Ismail, Sol Rayet, Paul Jebb, and John Gardner, for contributing to the development and testing.
+
+---
