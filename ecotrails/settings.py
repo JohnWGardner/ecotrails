@@ -32,7 +32,10 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-johnwgardner-ecotrails-19v3sb3fnq6.ws.codeinstitute-ide.net', 'https://*.herokuapp.com']
+ALLOWED_HOSTS = [
+    '.localhost',  # Match any subdomain of localhost (for development)
+    '*.herokuapp.com',  # Allow any subdomain under heroku.com (for production)
+]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
