@@ -25,8 +25,8 @@ SECRET_KEY = 'django-insecure-giryh7_1^evdj!r_=^q95t#6#7jalq(pnnzygyu85j^trf6*4-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-johnwgardner-ecotrails-19v3sb3fnq6.ws.codeinstitute-ide.net']
-
+ALLOWED_HOSTS = ['8000-johnwgardner-ecotrails-19v3sb3fnq6.ws.codeinstitute-ide.net', 'https://*.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
 # Application definition
 
