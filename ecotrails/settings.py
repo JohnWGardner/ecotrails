@@ -35,7 +35,9 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '.localhost',  # Match any subdomain of localhost (for development)
     '*.herokuapp.com',  # Allow any subdomain under heroku.com (for production)
+    'ecotrails-54f65842ae68.herokuapp.com',  # Specific Heroku app domain
 ]
+
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
