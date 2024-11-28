@@ -7,14 +7,15 @@ STATUS = ((0, "Draft"), (1, "Published"))  #Defines the possible statuses for a 
 class BlogPost(models.Model): #from my ERD: Post Table. BlogPost class inherits properties and methods from the models.Model class
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True) #used to build a URL for each of our posts
-    author_id = models.ForeignKey( # author_id is a foreign key referencing the primary key of the User.id
+    author_id = models.ForeignKey( # author_id is a foreign key referencing the primary key of the User
     User, on_delete=models.CASCADE, related_name="blog_posts" # CASCADE = on the deletion of the user entry, all their posts are also deleted.
     )
 
 content = models.TextField() # This is the blog article content.
 created_on = models.DateTimeField(auto_now_add=True) #auto_now_add=True means the default created time is the time of post entry.
 status = models.IntegerField(choices=STATUS, default=0)  # Represents current status of blog post (Draft:0 (default) or Published:1).
-
+excerpt = models.TextField(blank=True) #creates a field that can store an excerpt - blank=True: indicates that the field is optional
+updated_on = models.DateTimeField(auto_now=True) #sets the value to the current date and time whenever the record is saved, not just when it is created.
 
 
 
