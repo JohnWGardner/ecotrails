@@ -12,6 +12,6 @@ class BlogPostAdmin(SummernoteModelAdmin): # ... admin configuration for BlogPos
     summernote_fields = ('content',)
 
 # Register your models here.
-admin.site.register(BlogPost) # no longer needed as decorator does this above
+#admin.site.register(BlogPost) # no longer needed as decorator does this above
 admin.site.register(BlogPostComments) #This registion allows users to create, comments on my blog posts.
 
