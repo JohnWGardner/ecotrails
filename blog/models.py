@@ -23,7 +23,7 @@ class BlogPost(models.Model): #from my ERD: Post Table. BlogPost class inherits 
     def __str__(self):
         return f"{self.title} | written by {self.author_id}"  # Returns a string representation of each BlogPost.title
 
-
+# new Python class for comments:
 class BlogPostComments(models.Model): #from my ERD: Post Table. BlogPostComments class inherits properties and methods from the models.Model class
     class Meta:
         verbose_name_plural = 'Blog Post Comments' #fixing plural metadata naming error without changing DB schema
