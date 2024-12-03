@@ -8,4 +8,4 @@ class BlogPostList(generic.ListView): # Defines a class-based view for listing e
     # model = BlogPost # This is made redundant by the queryset explicitly stating all published (1) posts are displayed.
     queryset = BlogPost.objects.filter(status=1) # Fetches all BlogPost objects from the database
     template_name = "blog/index.html"
-    paginate_by = 6
+    paginate_by = 9
