@@ -1,4 +1,7 @@
 {% load static %}
+{% url 'home' as home_url %}
+{% url 'about' as about_url %}
+{% url 'destinations' as destinations_url %}
 
 
 <!DOCTYPE html>
@@ -11,6 +14,14 @@
 </head>
 <body>
     <h1>Home page place holder</h1>
-    
+    <li class="nav-item">
+        <a
+          class="nav-link
+          {% if request.path == about_url %}active{%endif%}"
+          aria-current="page"
+          href="{% url 'about' %}"
+          >About</a
+        >
+      </li>
 </body>
 </html>

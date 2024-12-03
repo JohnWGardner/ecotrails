@@ -10,20 +10,8 @@ class BlogPostList(generic.ListView): # Defines a class-based view for listing e
     template_name = "blog/index.html" #explicit naming of template name
     paginate_by = 6 # how many blogs are shown per page 
 
-def post_detail(request, slug): #Display an individual :model:`blog.Post`.
-    """
-    
-
-    **Context**
-
-    ``post``
-        An instance of :model:`blog.BlogPost`.
-
-    **Template:**
-
-    :template:`blog/post_detail.html`
-    """
-
+def post_detail(request, slug): #Display an individual :model:`blog.Post`. 
+    #**Context** ``post`` An instance of :model:`blog.BlogPost`. **Template:** :template:`blog/post_detail.html`
     queryset = BlogPost.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
 
