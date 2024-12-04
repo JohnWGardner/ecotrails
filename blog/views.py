@@ -14,9 +14,15 @@ def post_detail(request, slug): #Display an individual :model:`blog.Post`.
     #**Context** ``post`` An instance of :model:`blog.BlogPost`. **Template:** :template:`blog/post_detail.html`
     queryset = BlogPost.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
+    comments = post.blog_post_comments.all().order_by("-created_on")
+    comment_count = post.blog_post_comments.filter(approved=True).count()
 
     return render(
         request,
         "blog/post_detail.html",
-        {"post": post},
+        {
+            "post": post,
+            "comments": comments,
+            "comment_count": comment_count,
+        },
     )

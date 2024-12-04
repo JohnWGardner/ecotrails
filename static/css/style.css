@@ -9,6 +9,25 @@ body {
     color: #4A4A4F;
 }
 
+.navbar { 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .navbar {     
+    background-color: #4CAF50
+  }
+
+.banner {
+    background: url(../staticfiles/images/ecotrail.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    min-height: 650px;
+    transition: .3s ease-in-out;
+}
+
 .red-o {
     color: #E84610;
 }

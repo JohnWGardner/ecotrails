@@ -9,6 +9,10 @@ body {
     color: #4A4A4F;
 }
 
+.navbar { 
+    background-color: #4CAF50 !important;
+}
+
 .red-o {
     color: #E84610;
 }
