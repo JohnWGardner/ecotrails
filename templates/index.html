@@ -1,19 +1,40 @@
 {% load static %}
 {% url 'home' as home_url %}
-{% url 'about' as about_url %}
 {% url 'destinations' as destinations_url %}
-
+{% url 'about' as about_url %}
+{% url 'contact' as contact_url %}
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Django-Setup</title>
+    <title>ecoTrails</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}" >
 </head>
 <body>
     <h1>Home page place holder</h1>
+    
+    <li class="nav-item">
+      <a
+        class="nav-link
+        {% if request.path == blog_url %}active{%endif%}"
+        aria-current="page"
+        href="{% url 'blog' %}"
+        >Blog</a
+      >
+    </li>
+    
+    <li class="nav-item">
+      <a
+        class="nav-link
+        {% if request.path == destinations_url %}active{%endif%}"
+        aria-current="page"
+        href="{% url 'destinations' %}"
+        >Destinations</a
+      >
+    </li>
+    
     <li class="nav-item">
         <a
           class="nav-link
@@ -22,16 +43,18 @@
           href="{% url 'about' %}"
           >About</a
         >
-      </li>
+    </li>
 
-      <li class="nav-item">
-        <a
-          class="nav-link
-          {% if request.path == destinations_url %}active{%endif%}"
-          aria-current="page"
-          href="{% url 'destinations' %}"
-          >Destinations</a
-        >
-      </li>
+    <li class="nav-item">
+      <a
+        class="nav-link
+        {% if request.path == contact_url %}active{%endif%}"
+        aria-current="page"
+        href="{% url 'contact' %}"
+        >Contact</a
+      >
+    </li>
+
+    
 </body>
 </html>
