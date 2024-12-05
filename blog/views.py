@@ -22,6 +22,7 @@ def post_detail(request, slug): # Function to display the details of a blog post
     comment_form = CommentForm() # Initialize comment_form here
 
     if request.method == "POST": # Check if the request method is POST
+        print("Received a POST request")
         comment_form = CommentForm(data=request.POST) # Bind data from POST request to the form
         if comment_form.is_valid(): # Check if the form data is valid
             comment = comment_form.save(commit=False) # Create a comment object without saving to the database yet
@@ -33,7 +34,8 @@ def post_detail(request, slug): # Function to display the details of a blog post
             'Comment submitted and awaiting approval'
             )
         comment_form = CommentForm() # Reinitialize form after saving comment
-
+        
+        print("About to render template")
     return render(
         request,
         "blog/post_detail.html", # Render the post_detail template

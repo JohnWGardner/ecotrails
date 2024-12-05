@@ -19,7 +19,7 @@ body {
   }
 
 .banner {
-    background: url(../staticfiles/images/ecotrail.jpg);
+    background: url(../images/ecotrail1.jpg); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
