@@ -1,24 +1,26 @@
 {% extends 'base.html' %}
-{% block content %}
 {% load static %}
-<div class="container mt-5">
-  <div class="row">
-    <div class="col-4 text-center">
-      <img src="{% static 'images/ecotrail_tent.jpg' %}" width="75%" />
-    </div>
-    <div class="col-8">
-      <!-- Title goes between these h2 tags -->
-      <h2>{{ contact.title }}</h2>
-      <!-- Content goes directly underneath this -->
-      {{ contact.content | safe }}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col text-right">
-      <!-- Updated on field goes in here -->
+{% load crispy_forms_tags %}
 
-      <p class="text-end"><em>Updated on: {{ contact.updated_on }}</em></p>
+{% block content %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h2>{{ contact.title }}</h2>
+            {{ contact.content | safe }}
+            <p class="text-end"><em>Updated on: {{ contact.updated_on }}</em></p>
+            <h2>Tell me about your adventures</h2>
+            <p>I'm excited to hear from you. Fill out the form and tell me where you've been and what youve been up to!</p>
+
+            <form method="post">
+                {{ collaborate_form | crispy }}
+                {% csrf_token %}
+                <button class="btn btn-secondary" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <img src="{% static 'images/ecotrail.jpg' %}" width="100%">
+        </div>
     </div>
-  </div>
 </div>
 {% endblock content %}
