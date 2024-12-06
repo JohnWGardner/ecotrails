@@ -4,6 +4,7 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
-class DestinationsAdmin(SummernoteModelAdmin):
 
+@admin.register(Destinations)
+class DestinationsAdmin(SummernoteModelAdmin):
     summernote_fields = ('content',)
