@@ -12,4 +12,4 @@ class Destinations(models.Model):
         return self.name 
 
     class Meta: 
-        verbose_name = "Destination" # Singular name
+        verbose_name = "Destination"
