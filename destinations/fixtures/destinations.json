@@ -1,0 +1,50 @@
+[
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "Exploring the Wonders of the Grand Canyon",
+            "slug": "exploring-grand-canyon",
+            "author": 1,
+            "continent": "North America",
+            "country": "United States",
+            "content": "<p>The Grand Canyon is one of the most iconic natural wonders in the world. Discover the best hiking trails, viewpoints, and tips for making the most of your visit.</p>",
+            "created_on": "2024-12-02T13:51:00Z",
+            "status": 1,
+            "excerpt": "A guide to exploring the Grand Canyon: Hiking trails, viewpoints, and tips.",
+            "updated_on": "2024-12-02T13:51:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "A Journey Through the Swiss Alps",
+            "slug": "journey-swiss-alps",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Switzerland",
+            "content": "<p>The Swiss Alps offer breathtaking scenery and world-class skiing. Learn about the best resorts, activities, and how to plan your trip to this winter wonderland.</p>",
+            "created_on": "2024-12-02T13:51:00Z",
+            "status": 1,
+            "excerpt": "Discover the Swiss Alps: Top resorts, activities, and travel tips.",
+            "updated_on": "2024-12-02T13:51:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "Safari Adventures in Kenya",
+            "slug": "safari-adventures-kenya",
+            "author": 1,
+            "continent": "Africa",
+            "country": "Kenya",
+            "content": "<p>Kenya is renowned for its incredible wildlife and safari experiences. Explore the best national parks, wildlife reserves, and tips for an unforgettable safari adventure.</p>",
+            "created_on": "2024-12-02T13:51:00Z",
+            "status": 1,
+            "excerpt": "Experience the thrill of a safari in Kenya: Top parks, wildlife, and travel tips.",
+            "updated_on": "2024-12-02T13:51:00Z"
+        }
+    }
+]

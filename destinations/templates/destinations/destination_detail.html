@@ -33,6 +33,8 @@
                 <h1 class="post-title">{{ destination.title }}</h1>
                 <!-- Destination author goes before the | the destination's created date goes after -->
                 <p class="post-subtitle">{{ destination.author.username }} | {{ destination.created_on }}</p>
+                <p class="post-subtitle"><strong>Continent:</strong> {{ destination.get_continent_display }}</p>
+                <p class="post-subtitle"><strong>Country:</strong> {{ destination.country }}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/ecotrail_map.jpg' %}" class="scale" alt="placeholder">
