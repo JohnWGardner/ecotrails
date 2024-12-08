@@ -1,16 +1,21 @@
-from django.shortcuts import render
-from .models import Destinations
+from django.shortcuts import render, get_object_or_404
+from django.views import generic
+from .models import Destination
 
 # Create your views here.
 
-def my_destinations(request):
-    """
-    Renders the About page
-    """
-    destination = Destinations.objects.all().order_by('-updated_on').first()
+class DestinationList(generic.ListView):
+    queryset = Destination.objects.filter(status=1).order_by('-created_on')
+    template_name = "destinations/index.html"
+    paginate_by = 6
 
+def destination_detail(request, slug):
+    queryset = Destination.objects.filter(status=1)
+    destination = get_object_or_404(queryset, slug=slug)
     return render(
         request,
-        "destinations/destinations.html",
-        {"destination": destination},
+        "destinations/destination_detail.html",
+        {
+            "destination": destination,
+        },
     )
