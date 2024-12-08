@@ -62,7 +62,6 @@ def comment_edit(request, slug, comment_id): # This view function handles editin
             comment.approved = False # Set the comment's approval status to unapproved (needs moderation)
             comment.save() # Now save the updated comment object to the database
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!') # Add a success message for the user
-
         else:            # If form is invalid or user doesn't own the comment
             messages.add_message(request, messages.ERROR, 'Error updating comment!') # Add an error message for the user
 
@@ -76,7 +75,7 @@ def comment_delete(request, slug, comment_id):
     post = get_object_or_404(queryset, slug=slug)
     comment = get_object_or_404(BlogPostComments, pk=comment_id)
 
-    if comment.author_id == request.user:
+    if comment.comment_author == request.user:
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
