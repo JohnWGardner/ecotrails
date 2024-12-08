@@ -56,7 +56,7 @@
 
                     <li class="nav-item">
                         <a class="nav-link {% if request.path == destinations_url %}active{%endif%}" aria-current="page"
-                            href="{% url 'destinations' %}">Destinations</a>
+                            href="{% url 'destination_list' %}">Destinations</a>
                     </li>
 
                     <li class="nav-item">
@@ -120,7 +120,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 mb-4 px-5">
-                    <a href="{% url 'destinations' %}" class="black">
+                    <a href="{% url 'destination_list' %}" class="black">
                         <img src="{% static 'images/dest.jpg' %}" class="img-fluid rounded-pill" alt="Destinations">
                         <div class="text-center mt-2">
                             <h5>Destinations</h5>
