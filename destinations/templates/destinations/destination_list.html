@@ -27,8 +27,9 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <h1 class="my-4 text-white">Recomended Destinations by Continent</h1>
+        <!-- left column: recommended destinations -->
+        <div class="col-md-8">
+            <h1 class="my-4 text-white">Recommended Destinations by Continent</h1>
             {% for continent, destinations in destinations_by_continent.items %}
             <h2><u>{{ continent }}</u></h2>
             {% for destination in destinations %}
@@ -48,19 +49,42 @@
             {% endfor %}
             {% endfor %}
         </div>
-    </div>
-    <div class="col-md-4 card mb-4 mt-3">
-        <div class="card-body">
-            {% if user.is_authenticated %}
-            <h3>Leave a comment:</h3>           
-            <form id="recommendationForm" method="post" style="margin-top: 1.3em;">
-                {{ recommendation_form|crispy }}
-                {% csrf_token %}
-                <button id="submitButton" type="submit" class="btn btn-primary">Submit</button>
-            </form>
-            {% else %}
-            <p>Log in to leave a comment</p>
-            {% endif %}
+        <!-- Right Column: Recommendation Form and Recommendations -->
+        <div class="col-md-4">
+            <!-- Creating New Recommendations -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    {% if user.is_authenticated %}
+                    <h2 class="my-4">Submit Your Location Recommendation</h2>
+                    <form id="recommendationForm" method="post" style="margin-top: 1.3em;">
+                        {{ recommendation_form|crispy }}
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    {% else %}
+                    <p>Log in to submit your recommendation</p>
+                    {% endif %}
+                </div>
+            </div>
+            <!-- Displaying Recommendations -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3>Readers Recommendations:</h3>
+                    {% for recommendation in recommendations %}
+                    <div class="p-2 recommendations">
+                        <p class="font-weight-bold">
+                            {{ recommendation.user.username }}
+                            <span class="font-weight-normal">
+                                {{ recommendation.created_on }}
+                            </span> wrote:
+                        </p>
+                        <div id="recommendation{{ recommendation.id }}">
+                            {{ recommendation.description | linebreaks }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
