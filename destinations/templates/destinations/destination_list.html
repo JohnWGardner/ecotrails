@@ -28,8 +28,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <h1 class="my-4">Destinations</h1>
-            {% for destination in object_list %}
+            <h1 class="my-4 text-white">Recomended Destinations by Continent</h1>
+            {% for continent, destinations in destinations_by_continent.items %}
+            <h2><u>{{ continent }}</u></h2>
+            {% for destination in destinations %}
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ destination.title }}</h2>
@@ -43,6 +45,7 @@
                     <a href="#">{{ destination.author.username }}</a>
                 </div>
             </div>
+            {% endfor %}
             {% endfor %}
         </div>
     </div>

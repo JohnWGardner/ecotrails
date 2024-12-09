@@ -3,48 +3,305 @@
         "model": "destinations.destination",
         "pk": null,
         "fields": {
-            "title": "Exploring the Wonders of the Grand Canyon",
-            "slug": "exploring-grand-canyon",
-            "author": 1,
-            "continent": "North America",
-            "country": "United States",
-            "content": "<p>The Grand Canyon is one of the most iconic natural wonders in the world. Discover the best hiking trails, viewpoints, and tips for making the most of your visit.</p>",
-            "created_on": "2024-12-02T13:51:00Z",
-            "status": 1,
-            "excerpt": "A guide to exploring the Grand Canyon: Hiking trails, viewpoints, and tips.",
-            "updated_on": "2024-12-02T13:51:00Z"
-        }
-    },
-    {
-        "model": "destinations.destination",
-        "pk": null,
-        "fields": {
-            "title": "A Journey Through the Swiss Alps",
-            "slug": "journey-swiss-alps",
+            "title": "The Historic City of Rome",
+            "slug": "historic-rome",
             "author": 1,
             "continent": "Europe",
-            "country": "Switzerland",
-            "content": "<p>The Swiss Alps offer breathtaking scenery and world-class skiing. Learn about the best resorts, activities, and how to plan your trip to this winter wonderland.</p>",
-            "created_on": "2024-12-02T13:51:00Z",
+            "country": "Italy",
+            "content": "<p>Explore the ancient ruins of Rome, including the Colosseum, Roman Forum, and Trevi Fountain. Immerse yourself in the rich history and culture of this iconic city.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
             "status": 1,
-            "excerpt": "Discover the Swiss Alps: Top resorts, activities, and travel tips.",
-            "updated_on": "2024-12-02T13:51:00Z"
+            "excerpt": "Eternal City: Rome",
+            "updated_on": "2024-12-08T16:45:00Z"
         }
     },
     {
         "model": "destinations.destination",
         "pk": null,
         "fields": {
-            "title": "Safari Adventures in Kenya",
-            "slug": "safari-adventures-kenya",
+            "title": "The Serene Beauty of New Zealand",
+            "slug": "serene-new-zealand",
+            "author": 1,
+            "continent": "Oceania",
+            "country": "New Zealand",
+            "content": "<p>Discover the stunning landscapes of New Zealand, from the Lord of the Rings filming locations to the breathtaking fjords of Milford Sound. Hike the Tongariro Alpine Crossing, explore the vibrant cities of Auckland and Wellington, and experience the Maori culture.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "New Zealand: A Natural Paradise",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Vibrant Culture of India",
+            "slug": "vibrant-culture-india",
+            "author": 1,
+            "continent": "Asia",
+            "country": "India",
+            "content": "<p>Experience the rich culture and diversity of India, from the bustling streets of Delhi to the serene backwaters of Kerala. Visit the Taj Mahal, explore the ancient city of Varanasi, and taste delicious Indian cuisine.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "India: A Land of Diversity",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+   
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Island Paradise of the Maldives",
+            "slug": "island-paradise-maldives",
+            "author": 1,
+            "continent": "Asia",
+            "country": "Maldives",
+            "content": "<p>Relax on the pristine beaches of the Maldives, with crystal-clear waters and vibrant coral reefs. Snorkel, dive, or simply unwind in a luxurious overwater villa. Experience the ultimate tropical paradise.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Paradise Found in the Maldives",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Historic City of Prague",
+            "slug": "historic-prague",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Czech Republic",
+            "content": "<p>Explore the charming streets of Prague, with its stunning Gothic architecture, historic castles, and vibrant cultural scene. Visit the Charles Bridge, the Prague Castle, and the Old Town Square.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Prague: A City of Dreams",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Vibrant City of Barcelona",
+            "slug": "vibrant-barcelona",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Spain",
+            "content": "<p>Discover the vibrant city of Barcelona, with its stunning architecture, delicious cuisine, and lively nightlife. Visit the Sagrada Familia, explore the Gothic Quarter, and relax on the beautiful beaches of Barceloneta.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Barcelona: A City of Art and Culture",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Stunning Beaches of the Caribbean",
+            "slug": "stunning-beaches-caribbean",
+            "author": 1,
+            "continent": "North America",
+            "country": "Various Caribbean Islands",
+            "content": "<p>Relax on the pristine beaches of the Caribbean, with crystal-clear waters and vibrant coral reefs. Snorkel, dive, or simply unwind in a hammock. Experience the laid-back island lifestyle and indulge in delicious local cuisine.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Caribbean Paradise",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Ancient City of Kyoto",
+            "slug": "ancient-city-kyoto",
+            "author": 1,
+            "continent": "Asia",
+            "country": "Japan",
+            "content": "<p>Explore the ancient city of Kyoto, with its beautiful temples, traditional tea houses, and serene gardens. Experience the rich cultural heritage of Japan and witness traditional geisha performances.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Kyoto: A Cultural Gem",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Wild Beauty of Patagonia",
+            "slug": "wild-beauty-patagonia",
+            "author": 1,
+            "continent": "South America",
+            "country": "Argentina and Chile",
+            "content": "<p>Explore the stunning landscapes of Patagonia, with its towering mountains, glaciers, and pristine lakes. Hike the Torres del Paine National Park, kayak in the fjords of Chilean Patagonia, and spot wildlife like penguins and whales.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Patagonia: A Wilderness Adventure",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Ancient City of Athens",
+            "slug": "ancient-city-athens",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Greece",
+            "content": "<p>Visit the historic sites of Athens, including the Acropolis, Parthenon, and the Agora. Experience the rich culture and history of this ancient city.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Athens: The Cradle of Civilization",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Enchanting Isles of Greece",
+            "slug": "enchanting-greek-isles",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Greece",
+            "content": "<p>Explore the beautiful Greek Isles, from the white-washed buildings of Santorini to the vibrant nightlife of Mykonos. Enjoy crystal-clear waters, stunning sunsets, and delicious Mediterranean cuisine.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Greek Isles: Sun, Sea, and Serenity",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Majestic Rockies",
+            "slug": "majestic-rockies",
+            "author": 1,
+            "continent": "North America",
+            "country": "USA and Canada",
+            "content": "<p>Discover the breathtaking Rocky Mountains, with their towering peaks, lush forests, and pristine lakes. Enjoy hiking, skiing, and wildlife spotting in this stunning region.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Rockies: Adventure Awaits",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Bustling Metropolis of Tokyo",
+            "slug": "bustling-tokyo",
+            "author": 1,
+            "continent": "Asia",
+            "country": "Japan",
+            "content": "<p>Experience the vibrant energy of Tokyo, with its neon-lit streets, cutting-edge technology, and rich cultural heritage. Visit historic temples, enjoy world-class dining, and shop in trendy neighborhoods.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Tokyo: A City That Never Sleeps",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Wilds of the Canadian North",
+            "slug": "wild-canadian-north",
+            "author": 1,
+            "continent": "North America",
+            "country": "Canada",
+            "content": "<p>Explore the untouched wilderness of Canada’s northern territories. Experience the midnight sun, see the northern lights, and encounter diverse wildlife in their natural habitat.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Canadian North: A Wilderness Frontier",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Rich Traditions of Morocco",
+            "slug": "rich-traditions-morocco",
+            "author": 1,
+            "continent": "Africa",
+            "country": "Morocco",
+            "content": "<p>Dive into the vibrant culture of Morocco, from the bustling markets of Marrakech to the serene desert landscapes. Enjoy traditional music, taste local cuisine, and explore historic sites.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Morocco: A Tapestry of Cultures",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Safari Adventure in Kenya",
+            "slug": "safari-adventure-kenya",
             "author": 1,
             "continent": "Africa",
             "country": "Kenya",
-            "content": "<p>Kenya is renowned for its incredible wildlife and safari experiences. Explore the best national parks, wildlife reserves, and tips for an unforgettable safari adventure.</p>",
-            "created_on": "2024-12-02T13:51:00Z",
+            "content": "<p>Embark on a safari adventure in Kenya, home to some of the world’s most famous wildlife reserves. See the Big Five in their natural habitat, visit Maasai villages, and witness the Great Migration.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
             "status": 1,
-            "excerpt": "Experience the thrill of a safari in Kenya: Top parks, wildlife, and travel tips.",
-            "updated_on": "2024-12-02T13:51:00Z"
+            "excerpt": "Kenya: Wildlife Wonders",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Enchanted Forests of Germany",
+            "slug": "enchanted-forests-germany",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Germany",
+            "content": "<p>Explore the enchanting forests of Germany, filled with fairy-tale castles, lush woodlands, and charming villages. Hike through the Black Forest, visit the famous Neuschwanstein Castle, and enjoy traditional German fare.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Germany: Fairy-Tale Landscapes",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Stunning Fjords of Norway",
+            "slug": "stunning-fjords-norway",
+            "author": 1,
+            "continent": "Europe",
+            "country": "Norway",
+            "content": "<p>Discover the breathtaking fjords of Norway, with their towering cliffs, cascading waterfalls, and serene waters. Cruise through the fjords, hike to scenic viewpoints, and explore charming coastal villages.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Norway: Natures Masterpiece",
+            "updated_on": "2024-12-08T16:45:00Z"
+        }
+    },
+    {
+        "model": "destinations.destination",
+        "pk": null,
+        "fields": {
+            "title": "The Ancient Ruins of Machu Picchu",
+            "slug": "ancient-ruins-machu-picchu",
+            "author": 1,
+            "continent": "South America",
+            "country": "Peru",
+            "content": "<p>Visit the legendary ruins of Machu Picchu, an ancient Incan city nestled high in the Andes Mountains. Hike the Inca Trail, explore the Sacred Valley, and immerse yourself in the rich history of Peru.</p>",
+            "created_on": "2024-12-08T16:45:00Z",
+            "status": 1,
+            "excerpt": "Machu Picchu: A Journey to the Past",
+            "updated_on": "2024-12-08T16:45:00Z"
         }
     }
 ]

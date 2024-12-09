@@ -2,27 +2,6 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
-{% block hero %}
-<!-- Hero Section -->
-<section class="hero position-relative">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-12 hero-image position-relative d-flex justify-content-center align-items-center">
-                <div class="position-absolute top-0 end-0 p-3 text-white">
-                    {% if user.is_authenticated %}
-                        You are logged in as {{ user.username }}
-                    {% else %}
-                        You are not logged in
-                    {% endif %}
-                </div>
-                <div class="text-center text-white">
-                    <h1 class="display-4 mt-5">Explore the World</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{% endblock hero %}
 
 {% block content %}
 <div class="masthead">
