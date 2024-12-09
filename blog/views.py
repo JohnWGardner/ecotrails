@@ -56,7 +56,7 @@ def comment_edit(request, slug, comment_id): # This view function handles editin
         comment = get_object_or_404(BlogPostComments, pk=comment_id) # Get the specific comment based on its primary key (comment_id)
         comment_form = CommentForm(data=request.POST, instance=comment) # Initialize a CommentForm with submitted data and the existing comment object
 
-        if comment_form.is_valid() and comment.author_id == request.user: # Validate the form data and ensure the user owns the comment
+        if comment_form.is_valid() and comment.comment_author == request.user: # Validate the form data and ensure the user owns the comment
             comment = comment_form.save(commit=False) # Save the form data to a comment object (but don't commit yet)
             comment.post = post  # Set the comment's associated post
             comment.approved = False # Set the comment's approval status to unapproved (needs moderation)
