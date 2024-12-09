@@ -64,3 +64,42 @@ def destination_detail(request, slug):
             "recommendation_form": recommendation_form,  # pass the recommendation form to the template
         },
     )
+
+def recommendation_edit(request, slug, recommendation_id):
+    if request.method == "POST":
+        queryset = Destination.objects.filter(status=1)
+        destination = get_object_or_404(queryset, slug=slug)
+        recommendation = get_object_or_404(Recommendation, pk=recommendation_id)
+        recommendation_form = RecommendationForm(data=request.POST, instance=recommendation)
+
+        if recommendation_form.is_valid() and recommendation.user == request.user:
+            recommendation = recommendation_form.save(commit=False)
+            recommendation.destination = destination
+            recommendation.approved = False
+            recommendation.save()
+            messages.add_message(request, messages.SUCCESS, 'Recommendation Updated!')
+        else:
+            messages.add_message(request, messages.ERROR, 'Error updating recommendation!')
+
+    return render(
+        request,
+        "destinations/recommendation_edit.html",
+        {
+            "form": recommendation_form,
+        },
+    )
+
+def recommendation_delete(request, slug, recommendation_id):
+    recommendation = get_object_or_404(Recommendation, pk=recommendation_id)
+    if request.method == "POST":
+        recommendation.delete()
+        messages.add_message(request, messages.SUCCESS, 'Recommendation deleted successfully')
+        return redirect('destination_detail', slug=slug)
+
+    return render(
+        request,
+        "destinations/recommendation_delete.html",
+        {
+            "recommendation": recommendation,
+        },
+    )
