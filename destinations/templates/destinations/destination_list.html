@@ -79,7 +79,8 @@
                             </span> wrote:
                         </p>
                         <div id="recommendation{{ recommendation.id }}">
-                            {{ recommendation.description | linebreaks }}
+                            <u>Place:</u> {{ recommendation.place_name | linebreaks }}
+                        <u>Description:</u> {{ recommendation.description | linebreaks }}
                         </div>
                     </div>
                     {% endfor %}
