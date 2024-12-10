@@ -7,7 +7,7 @@ from django_summernote.admin import SummernoteModelAdmin
 @admin.register(Destination)
 class DestinationsAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
-    list_display=('id',)
+    list_display=('id', 'title')
 
 @admin.register(Recommendation)
 class RecommendationAdmin(SummernoteModelAdmin):
