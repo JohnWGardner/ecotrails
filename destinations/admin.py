@@ -6,12 +6,13 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register(Destination)
 class DestinationsAdmin(SummernoteModelAdmin):
-    summernote_fields = ('content',)
+    summernote_fields = ('content')
+    list_display=('id',)
 
 @admin.register(Recommendation)
 class RecommendationAdmin(SummernoteModelAdmin):
     
-    list_display = ('place_name', 'user', 'created_on', 'approved')
+    list_display = ('id', 'place_name', 'user', 'created_on', 'approved')
     list_filter = ('approved', 'created_on')
     search_fields = ('place_name', 'description')
     date_hierarchy = 'created_on'

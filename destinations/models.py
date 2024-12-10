@@ -33,6 +33,7 @@ class Destination(models.Model):
 
 class Recommendation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+    destination = models.ForeignKey(Destination, on_delete=models.CASCADE, related_name="recommendations")
     place_name = models.CharField(max_length=255)
     description = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
