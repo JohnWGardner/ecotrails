@@ -32,8 +32,7 @@ class Destination(models.Model):
         return f"{self.title} | {self.country} | {self.get_continent_display()} | written by {self.author}"
 
 class Recommendation(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    destination = models.ForeignKey(Destination, on_delete=models.CASCADE, related_name="recommendations", null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)    
     place_name = models.CharField(max_length=255)
     description = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
