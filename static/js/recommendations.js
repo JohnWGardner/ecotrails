@@ -20,7 +20,6 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
     let recommendationId = e.target.getAttribute("recommendation_id");
-    let slug = e.target.getAttribute("data-slug");
     let recommendationContent = document.getElementById(`recommendation${recommendationId}`).innerText;
     recommendationText.value = recommendationContent;
     submitButton.innerText = "Update";
@@ -41,7 +40,6 @@ for (let button of editButtons) {
 for (let button of deleteButtons) {
   button.addEventListener("click", (e) => {
     let recommendationId = e.target.getAttribute("recommendation_id");
-    let slug = e.target.getAttribute("data-slug");
     deleteConfirm.href = `delete_recommendation/${recommendationId}`;
     deleteModal.show();
   });
