@@ -12,8 +12,7 @@ def destination_list(request):
         if continent not in destinations_by_continent:  # If the continent is not already a key in the dictionary, add it with an empty list
             destinations_by_continent[continent] = []  # add an empty list for the continent
         destinations_by_continent[continent].append(destination)  # add the current destination to the list for its continent
-    
-    recommendations = Recommendation.objects.filter(approved=True)  # create a new empty recommendation form
+        recommendations = Recommendation.objects.filter(approved=True)  # create a new empty recommendation form
 
     if request.method == "POST":  # Check if the request method is POST
         recommendation_form = RecommendationForm(data=request.POST)  # pass data from POST request to the form
