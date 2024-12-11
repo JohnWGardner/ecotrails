@@ -9,7 +9,7 @@
 
 # Project Goals
 
-![project_board](https://github.com/user-attachments/assets/7c81d773-2298-499e-8972-af15f8b58b60)
+![project_board](static/images/README/Agile Planning.jpg)
 
 ## 1. Understand the Purpose:
 
@@ -187,18 +187,67 @@
 
 # Design Choices
 
+ERD design:
+
+ecotrails/destinations/models.py - ERD:
+
++-------------------+                  +-------------------+
+| User              |                  | Destination       |
+|-------------------|                  |-------------------|
+| - id (PK)         |<------------1--->| - id (PK)         |
+| - username        |                  | - title           |
+| - email           |                  | - slug            |
+| ...               |                  | - author (FK)     |
+|                   |                  | - continent       |
++-------------------+                  | - country         |
+                                       | - content         |
+                                       | - created_on      |
+                                       | - status          |
+                                       | - excerpt         |
+                                       | - updated_on      |
+                                       +-------------------+
+                                                   |
+                                                   N
+                                                   |
+                                                   |
+                                                   |
+                                                   |
+                                       +----------------------+
+                                       | Recommendation       |
+                                       |----------------------|
+                                       | - id (PK)            |
+                                       | - user (FK)          |
+                                       | - destination (FK)   |
+                                       | - place_name         |
+                                       | - description        |
+                                       | - created_on         |
+                                       | - approved           |
+                                       +----------------------+
+ecotrails/about/models.py - ERD:
+
++-------------------+
+| About             |
+|-------------------|
+| - id (PK)         |
+| - title           |
+| - profile_image   |
+| - updated_on      |
+| - content         |
++-------------------+
+
+
 ## Color Scheme
 
-- Warm color scheme used for forecast cards to enhance visual appeal.
+- bright sunny color scheme used to enhance visual appeal.
 
 ## Fonts
 
 - Standard fonts for readability and consistent design.
-- Slightly larger, bold fonts for key weather information to improve visibility.
+- Slightly larger, bold fonts for key information to improve visibility.
 
 ## Wireframes
 
-- Wireframes were created to design the weather app layout:  
+- Wireframes were created to design the Travel Blog layout:  
   `/workspace/Weather_Web_App/assets/wireframes`
   ![Wireframes](./assets/wireframes/Wireframes.png)
 
@@ -214,9 +263,29 @@
 
 ## CSS Validation
 
-- CSS validation was performed using W3C's CSS Validator. http://jigsaw.w3.org/css-validator/validator$link
+- CSS validation was performed using W3C's CSS Validator.
 
-![Screenshot 2024-10-24 at 13 30 00](https://github.com/user-attachments/assets/443f2f9c-cbc5-42ea-8c11-0c44b7668f22)
+![CSS validation](static/images/README/CSS_Test.jpg)
+
+## Manual Testing against user story compliance:
+
+
+
+## Criteria met:
+
+- At least one original custom model with associated functionalities, markedly different from those present in the Hello, Django! or Codestar Blog walkthrough projects if they have been used in your project.	Answer = (ecotrails/destinations/models.py) and (ecotrails/about/models.py)
+	
+- At least one form on the front end, which provides either admin or regular users with CRUD functionality without having to access the admin panel. Answer = (ecotrails/destinations/forms.py) and (ecotrails/blog/forms.py)
+	
+- At least one UI element on the front end, which allows either admin or regular users to delete records in the database without having to access the admin panel.	Answer = (ecotrails/destinations/templates/destinations/destination_list.html) and (ecotrails/blog/templates/blog/post_detail.html)
+	
+- Evidence of agile methodologies followed during the development of your project in the GitHub repository.	Answer = ecotrails/static/images/README/Agile Planning.jpg
+	
+- DEBUG mode set to False.	Answer: DEBUG = False
+	
+- Working functionality for users to register and log in and out of the application without issues.	Answer = (django.contrib.auth.models import User)
+	
+- Detailed testing write ups, beyond results of validation tools.	Answer = inc testing against user story compliance
 
 ## Accessibility
 
