@@ -128,12 +128,12 @@ h1 {
 }
 
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
+    margin-top: 10px;    
     position: relative;
     display: inline-block;
     height: 33vh;
     width: 100%;
+    padding: 0; /* Remove padding if it exists */
 }
 
 .masthead-text {
@@ -145,6 +145,7 @@ h1 {
 .masthead-image {
     position: relative;
     overflow: hidden;
+    z-index: 1; /* Set a higher z-index value */
 }
 
 .masthead-image:after {
