@@ -64,12 +64,16 @@ h1 {
 }
 
 .dest-image {
-    background: url(../images/map.jpg);
+    background: url(../images/map.jpg),  white !important;
     background-size: cover;
     width: 100%;
     min-height: 650px;
     margin: 0;
     padding: 0;
+}
+
+.dest-image .text-center h1 {
+    color: #000 !important; /* Ensure the text color is black */
 }
 
 
