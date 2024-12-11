@@ -1,4 +1,5 @@
 const editButtons = document.getElementsByClassName("btn-edit");
+const recommendationName = document.getElementById("id_place_name");
 const recommendationText = document.getElementById("id_description");
 const recommendationForm = document.getElementById("recommendationForm");
 const submitButton = document.getElementById("submitButton");
@@ -20,10 +21,11 @@ const deleteConfirm = document.getElementById("deleteConfirm");
 for (let button of editButtons) {
   button.addEventListener("click", (e) => {
     let recommendationId = e.target.getAttribute("recommendation_id");
-    let recommendationContent = document.getElementById(`recommendation${recommendationId}`).innerText;
-    recommendationText.value = recommendationContent;
+    let recommendationContent = document.getElementById(`recommendation${recommendationId}`).getElementsByTagName('p');
+    recommendationName.value = recommendationContent[0].innerText;
+    recommendationText.value = recommendationContent[1].innerText;
     submitButton.innerText = "Update";
-    recommendationForm.setAttribute("action", `edit_recommendation/${recommendationId}`);
+    recommendationForm.action = `edit_recommendation/${recommendationId}`;
   });
 }
 

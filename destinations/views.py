@@ -66,26 +66,25 @@ def destination_detail(request, slug):
         },
     )
 
-def recommendation_edit(request, slug, recommendation_id):
+def recommendation_edit(request, recommendation_id):
     """
     view to edit comments
     """
     if request.method == "POST":
         queryset = Destination.objects.filter(status=1)
-        destination = get_object_or_404(queryset, slug=slug)
         recommendation = get_object_or_404(Recommendation, pk=recommendation_id)
         recommendation_form = RecommendationForm(data=request.POST, instance=recommendation)
 
         if recommendation_form.is_valid() and recommendation.user == request.user:
             recommendation = recommendation_form.save(commit=False)
-            recommendation.destination = destination
-            recommendation.approved = False
+            recommendation.approved = True
             recommendation.save()
             messages.add_message(request, messages.SUCCESS, 'Recommendation Updated!')
         else:
+            print(recommendation_form.errors)
             messages.add_message(request, messages.ERROR, 'Error updating recommendation!')
 
-        return HttpResponseRedirect(reverse('destination_detail', args=[slug]))
+        return HttpResponseRedirect(reverse('destination_list'))
 
 def recommendation_delete(request, recommendation_id):
     recommendation = get_object_or_404(Recommendation, pk=recommendation_id)   

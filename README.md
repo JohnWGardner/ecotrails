@@ -9,19 +9,17 @@
 
 # Project Goals
 
-![project_board](static/images/README/Agile Planning.jpg)
+![AgilePlanning](static/images/README/Agile_Planning.jpg)
 
 ## 1. Understand the Purpose:
 
-- Provide users with real-time weather data and a 5-day forecast.
+- Provide users with 
 - Present information in a straightforward, organized format that is easy to understand and navigate.
 
 ## 2. Developer Key Goals:
 
-- Fetch real-time weather data and a simple, easy-to-digest 5-day weather forecast.
+- Fetch  data and a simple, easy-to-digest .
 - Design and implement the webpage using Bootstrap 4.6 for responsiveness and layout.
-- Integrate external API for dynamic data (OpenWeatherMap API).
-- Implement error handling for invalid city inputs and show meaningful error messages.
 
 ---
 
@@ -29,20 +27,20 @@
 
 ## 1. Home Page
 
-- A weather search form using Bootstrap components, allowing users to input a city and retrieve weather data.
-  ![Weather Search Form](./assets/images/weather-search-form.png)
-- A real-time display of current weather data, including temperature, condition, humidity, and wind speed.
-  ![Current Weather Data ](./assets/images/Current-Weather.png)
-- A 5-day weather forecast, using Bootstrap cards, showing daily conditions, temperatures, humidity, and wind speeds.
+- A  search form using Bootstrap components, allowing users to input .
 
-  ![5-day Forecast](./assets/images/5-day-forecast.png)
+- A real-time display of data, 
+
+- A , using Bootstrap cards, showing 
+
+
 
 ## 2. Additional Features:
 
 - Responsiveness ensured using Bootstrap 4.6, so the app works across various screen sizes.
 - Clear navigation and intuitive UI with accessible forms.
-- Fetching data dynamically from the OpenWeatherMap API.
-- Error handling with messages if the city is not found or if there’s an API issue.
+- Fetching data dynamically
+- Error handling with messages 
 
 ---
 
@@ -50,7 +48,7 @@
 
 ## 1. Target Audience
 
-- Users who want real-time weather data and a 5-day forecast for planning their daily or weekly activities.
+- Users who want 
 
 ## 2. User Stories
 
@@ -173,15 +171,7 @@
 - **CSS3**: For layout, color schemes, and basic styles.
 - **Bootstrap 4.6**: For responsive layout, styling, and form components.
 - **JavaScript (ES6+)**: For the dynamic weather display and API integration.
-- **OpenWeatherMap API**: To fetch real-time weather and forecast data.
 - **GitHub Pages**: For deployment of the live app.
-
----
-
-# API Integration
-
-- The OpenWeatherMap API is used to retrieve real-time weather and 5-day forecast data based on user input.
-- The app uses `fetch` to make asynchronous API calls, processes the JSON responses, and dynamically updates the DOM with weather data.
 
 ---
 
@@ -248,8 +238,8 @@ ecotrails/about/models.py - ERD:
 ## Wireframes
 
 - Wireframes were created to design the Travel Blog layout:  
-  `/workspace/Weather_Web_App/assets/wireframes`
-  ![Wireframes](./assets/wireframes/Wireframes.png)
+![Home_Wireframe](static/images/README/home.jpg)
+
 
 ---
 
@@ -326,46 +316,6 @@ ecotrails/about/models.py - ERD:
 
 # Bugs
 
-## Five day forecast
-
-- When Adding the JS function for the 5 day forecast errors 401 and 404 were thrown.
-  By adding getForecast(search.box) to the event listener we were able to make progress
-  but still had error 401.
-  We commented out response catch.error at line 50 and this removed the final error.
-
-- There was a single line of duplicate JS code which was preventing the function from  
-  runnning correctly. When the duplicate line was removed and an event listener added this resolved the issue.
-
-  ## Forecast loop
-
-  - We created individual Const for date/time, forecast, temperature, description,
-    humidity and wind speed. Initial tests caused the code to print directly to the page.
-    Further testing showed that we need to tell the function to run in english GB.
-    Having corrected this it was no longer printing to screen but the cards were displaying the incorrect day of the week on the forecast cards.
-
-    Adding a let outside of the for loop and a const to grab the relevant HTML information
-    along with a const outside of the for loop to grab further information by ID and passing that into the HTML resolved this issue.
-
-  ## Footer
-
-  ### Temporary fix
-
-  - The footer was overlapping with the last forecast card.
-  - Adjusted padding and CSS functions in order attempt a fix. This showed no result.
-    removed fixed position in HTML and again adjusted CSS to have a sticky or static position which also showed no result.
-    Replaced fixed-bottom in HTML and attempted a temporary fix using br between the final
-    card and the footer. After adding five of these it has resolved the overlap issue. This will be reviewed in a later iteration.
-
-## Use my location
-
-- We identified that this function was not working. Using dev tools we were able to identify
-  that this was due to a lack of information relating to Longitude and latitude.
-
-- By adding an if and else function to both the forecast and five day forecast w hoped t to
-  accurately pinpoint a users location by city.
-  This initially gave no reponse as the position and the latitude had not been correctly defined. so we altered the temperal literals for the latitude and longitude which then threw a further error 404 under our check weather function.
-  As this appeared to be a URL issue we altered fom APIurl to geoForecastURL and geoWeather URL respectively.
-  This fixed the cards by showing weather data but assigned no location and the information was not accurate to the testers location having checked this with other existing weather applications.
 
 # Deployment
 
@@ -376,26 +326,24 @@ The app was deployed using **GitHub Pages**:
 3. Choose the **Main Branch** as the source, then save.
 4. The page will automatically be published.
 
-- **Live App URL:** [Weather Web App](https://johnwgardner.github.io/Weather_Web_App)
+- **Live App URL:** [ecotrails App](https://ecotrails-54f65842ae68.herokuapp.com/)
 
-- We used Agile methodology, with early deployment to see every change live, aiding the development process.
+- Agile methodology was used, with early deployment to see every change live, aiding the development process.
 
 ---
 
 # Future Enhancements:
-- Geo Location: Although the geo-location feature is functional, it currently retrieves incorrect data and city names. Given more time, we would diagnose and resolve this issue to ensure accurate data retrieval.
-- Interactive Map: With additional time, we plan to integrate an interactive map that allows users to hover over and click on a city to get weather conditions.
+- More emphasis on design for leaving travel recommendations, as it doesn't work as well as I would like on a mobile device.
 
 ---
 
 # Credits
 
-- **OpenWeatherMap API**: Used for fetching live weather data.
+
 - **Bootstrap**: For layout, components, and responsive design.
 - **Code Institute**: For project templates and guidance.
 - **Font Awesome**: For fonts.
 - **Favicon**: For favicon image.
-- **Freepik**: For jumbotron image.
-- **Team Members**: Hodo Ismail, Sol Rayet, Paul Jebb, and John Gardner, for contributing to the development and testing.
+- **Freepik**: For hero image.
 
 ---
