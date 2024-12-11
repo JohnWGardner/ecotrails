@@ -269,7 +269,29 @@ ecotrails/about/models.py - ERD:
 
 ## Manual Testing against user story compliance:
 
-
+| User Story | MoSCoW | Status | CI Criteria | Validation Test |
+|---|---|---|---|---|
+| Admin: Create a New Blog Post | Must Have | Done | TRUE | TRUE |
+| Admin: Edit Blog Posts | Must Have | Done | TRUE | TRUE |
+| Admin: Delete Blog Posts | Must Have | Done | TRUE | TRUE |
+| Admin: Moderate user comments on posts | Must Have | Done | TRUE | TRUE |
+| Admin: Moderate user recommendations for travel | Must Have | Done | TRUE | TRUE |
+| User: View list of blog posts | Must Have | Done | TRUE | TRUE |
+| User: View an Individual Blog Post | Must Have | Done | TRUE | TRUE |
+| User Authentication: register an account | Must Have | Done | TRUE | TRUE |
+| User Authentication: log in and log out of account | Must Have | Done | TRUE | TRUE |
+| User: Post Comments on a Blog Post | Must Have | Done | TRUE | TRUE |
+| User: Delete my Comments on a Blog Post | Must Have | Done | TRUE | TRUE |
+| User: Edit my Comments on a Blog Post | Must Have | Done | TRUE | TRUE |
+| User: Post my recommendations for travel | Must Have | Done | TRUE | TRUE |
+| User: Delete my recommendations for travel | Must Have | Done | TRUE | TRUE |
+| User: Edit my recommendations for travel | Must Have | Done | TRUE | TRUE |
+| User: View Post Excerpts | Could Have | Done | FALSE | TRUE |
+| User: Social Sharing | Could Have | Done | FALSE | TRUE |
+| User: browse travel recommendations by categories (continents) | Should Have | Done | FALSE | TRUE |
+| User: search blog posts by keywords | Could Have | Not Done | FALSE | FALSE |
+| User: e-commerce Integration | Won't Have | Not Done | FALSE | FALSE |
+| Admin: Advanced Analytics | Won't Have | Not Done | FALSE | FALSE |
 
 ## Criteria met:
 
