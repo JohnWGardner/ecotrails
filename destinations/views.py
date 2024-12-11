@@ -10,9 +10,10 @@ def destination_list(request):
     for destination in destinations:  # Loop over each destination
         continent = destination.get_continent_display()  # Get the display name of the continent for the current destination
         if continent not in destinations_by_continent:  # If the continent is not already a key in the dictionary, add it with an empty list
-            destinations_by_continent[continent] = []  # add an empty list for the continent
+           destinations_by_continent[continent] = []  # add an empty list for the continent
         destinations_by_continent[continent].append(destination)  # add the current destination to the list for its continent
-        recommendations = Recommendation.objects.filter(approved=True)  # create a new empty recommendation form
+        
+    recommendations = Recommendation.objects.filter(approved=True)  # create a new empty recommendation form
 
     if request.method == "POST":  # Check if the request method is POST
         recommendation_form = RecommendationForm(data=request.POST)  # pass data from POST request to the form
@@ -54,6 +55,7 @@ def destination_detail(request, slug):
                 'Recommendation submitted and awaiting approval'
             )  # add a success message to be displayed to the user
             return HttpResponseRedirect(reverse('destination_detail', args=[slug]))  # redirect to the same destination detail page
+
     return render(
         request,
         "destinations/destination_detail.html",
@@ -65,6 +67,9 @@ def destination_detail(request, slug):
     )
 
 def recommendation_edit(request, slug, recommendation_id):
+    """
+    view to edit comments
+    """
     if request.method == "POST":
         queryset = Destination.objects.filter(status=1)
         destination = get_object_or_404(queryset, slug=slug)
@@ -80,13 +85,7 @@ def recommendation_edit(request, slug, recommendation_id):
         else:
             messages.add_message(request, messages.ERROR, 'Error updating recommendation!')
 
-    return render(
-        request,
-        "destinations/recommendation_edit.html",
-        {
-            "form": recommendation_form,
-        },
-    )
+        return HttpResponseRedirect(reverse('destination_detail', args=[slug]))
 
 def recommendation_delete(request, slug, recommendation_id):
     recommendation = get_object_or_404(Recommendation, pk=recommendation_id)
@@ -95,10 +94,4 @@ def recommendation_delete(request, slug, recommendation_id):
         messages.add_message(request, messages.SUCCESS, 'Recommendation deleted successfully')
         return redirect('destination_detail', slug=slug)
 
-    return render(
-        request,
-        "destinations/recommendation_delete.html",
-        {
-            "recommendation": recommendation,
-        },
-    )
+    return HttpResponseRedirect(reverse('destination_detail', args=[slug]))
