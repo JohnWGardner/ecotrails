@@ -36,6 +36,7 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <h2 class="card-title">{{ destination.title }}</h2>
+                    <div style="color: white;">Slug: {{ destination.slug }}</div>
                     <p class="card-text">{{ destination.excerpt }}</p>
                     <p class="card-text"><strong>Continent:</strong> {{ destination.get_continent_display }}</p>
                     <p class="card-text"><strong>Country:</strong> {{ destination.country }}</p>
@@ -83,6 +84,7 @@
                             <u>Place:</u> {{ recommendation.place_name | linebreaks }}
                             <u>Description:</u> {{ recommendation.description | linebreaks }}
                         </div>
+                        
                         {% if not recommendation.approved %}
                         <p class="approval">This recommendation is awaiting approval</p>
                         {% endif %}

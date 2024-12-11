@@ -87,11 +87,9 @@ def recommendation_edit(request, slug, recommendation_id):
 
         return HttpResponseRedirect(reverse('destination_detail', args=[slug]))
 
-def recommendation_delete(request, slug, recommendation_id):
-    recommendation = get_object_or_404(Recommendation, pk=recommendation_id)
-    if request.method == "POST":
-        recommendation.delete()
-        messages.add_message(request, messages.SUCCESS, 'Recommendation deleted successfully')
-        return redirect('destination_detail', slug=slug)
-
-    return HttpResponseRedirect(reverse('destination_detail', args=[slug]))
+def recommendation_delete(request, recommendation_id):
+    recommendation = get_object_or_404(Recommendation, pk=recommendation_id)   
+    recommendation.delete()
+    messages.add_message(request, messages.SUCCESS, 'Recommendation deleted successfully')
+   
+    return HttpResponseRedirect(reverse('destination_list'))
