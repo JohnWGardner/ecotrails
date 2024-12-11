@@ -3,11 +3,11 @@
 
 {% block hero %}
 <!-- Hero Section -->
-<section class="hero position-relative">
+<section class="blog-image position-relative">
     <div class="container-fluid p-0">
         <div class="row no-gutters">
             <div class="col-12 hero-image position-relative d-flex justify-content-center align-items-center">
-                <div class="position-absolute top-0 end-0 p-3 text-white">
+                <div class="position-absolute top-0 end-0 p-3 text-black">
                     {% if user.is_authenticated %}
                         You are logged in as {{ user.username }}
                     {% else %}
@@ -15,7 +15,7 @@
                     {% endif %}
                 </div>
                 <div class="text-center text-white">
-                    <h1 class="display-4 mt-5">Blog the Journey, Leave a Legacy</h1>
+                    <h1 class="display-4 mt-5">Blog the Journey</h1>
                 </div>
             </div>
         </div>
