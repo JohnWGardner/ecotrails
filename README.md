@@ -210,7 +210,7 @@
 
 - Initial HTML validation was done using the W3C Markup Validation Service.
 
-![Screenshot 2024-10-24 at 13 57 08](https://github.com/user-attachments/assets/3c9dd41d-3082-4c14-b360-0548f2e0fe53)
+static/images/README/HTML_Test.jpg
 
 ## CSS Validation
 
