@@ -64,12 +64,16 @@ h1 {
 }
 
 .dest-image {
-    background: url(../images/map.jpg);
+    background: url(../images/world2.jpg),  white !important;
     background-size: cover;
     width: 100%;
     min-height: 650px;
     margin: 0;
     padding: 0;
+}
+
+.dest-image .text-center h1 {
+    color: #000 !important; /* Ensure the text color is black */
 }
 
 
@@ -124,12 +128,12 @@ h1 {
 }
 
 .masthead {
-    margin-top: 10px;
-    overflow: hidden;
+    margin-top: 10px;    
     position: relative;
     display: inline-block;
     height: 33vh;
     width: 100%;
+    padding: 0; /* Remove padding if it exists */
 }
 
 .masthead-text {
@@ -141,6 +145,7 @@ h1 {
 .masthead-image {
     position: relative;
     overflow: hidden;
+    z-index: 1; /* Set a higher z-index value */
 }
 
 .masthead-image:after {

@@ -210,7 +210,7 @@
 
 - Initial HTML validation was done using the W3C Markup Validation Service.
 
-static/images/README/HTML_Test.jpg
+ ![HTML validation](static/images/README/HTML_Test.jpg)
 
 ## CSS Validation
 
