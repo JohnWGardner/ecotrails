@@ -7,223 +7,150 @@
 
 ---
 
-# Project Goals
+![marketing](static/images/README/marketing.jpg)
+
+# 1. Project Goals
 
 ![AgilePlanning](static/images/README/Agile_Planning.jpg)
 
-## 1. Understand the Purpose:
+## 2. Understand the Purpose:
 
-- Provide users with 
-- Present information in a straightforward, organized format that is easy to understand and navigate.
+* A platform for travel enthusiasts to share their experiences, discover new destinations and engage with like-minded travelers. The primary goals of this project are:
 
-## 2. Developer Key Goals:
+  * To create a comprehensive travel blog with informative and engaging content.
+  * To facilitate user interaction through comments and recommendations.
+  * To provide a user-friendly interface for browsing and contributing content.
+  * To establish a strong online presence for the travel blog.
 
-- Fetch  data and a simple, easy-to-digest .
-- Design and implement the webpage using Bootstrap 4.6 for responsiveness and layout.
-
----
-
-# Features
-
-## 1. Home Page
-
-- A  search form using Bootstrap components, allowing users to input .
-
-- A real-time display of data, 
-
-- A , using Bootstrap cards, showing 
+## 3. Developer Key Goals:
 
 
+## 4. Platform Features
 
-## 2. Additional Features:
+* **Home Page**
+  * Welcomes visitors and provides a brief overview of the blog's content.
+  * Features a carousel of popular blog posts.
+  * Highlights the latest blog posts and travel recommendations.
 
-- Responsiveness ensured using Bootstrap 4.6, so the app works across various screen sizes.
-- Clear navigation and intuitive UI with accessible forms.
-- Fetching data dynamically
-- Error handling with messages 
+  ![HomeFeature](static/images/README/HomeFeature.jpg)
 
----
+* **Blog Page**
+  * Displays a list of blog posts, categorized by topic or region.
+  * Allows users to view individual blog posts in detail.
+  * Enables users to leave comments on blog posts.
 
-# UX/UI
+  ![BlogFeature](static/images/README/BlogFeature.jpg)
 
-## 1. Target Audience
+* **Travel Recommendation Page**
+  * Displays a list of travel recommendations submitted by admin.
+  * Allows users to view recommendations by continent.
+  * Provides a form for users to submit their own travel recommendations.
 
-- Users who want 
+  ![DestinationFeature](static/images/README/DestinationFeature.jpg)
 
-## 2. User Stories
+* **About Page**
+  * Provides information about the site owner.
 
-### Real-time Weather Data
+  ![AboutFeature](static/images/README/AboutFeature.jpg)
 
-**As a user**, I want to input my city name and get the current weather data so that I can plan my immediate activities.
+* **Contact Page**
+  * Allows users to send messages to the the site owner.
 
-- **Acceptance Criteria**:
-  - User can enter a city name into a search box.
-  - Upon submitting, the current weather data for the specified city is displayed.
-  - Data includes temperature, weather conditions, humidity, and wind speed.
-  - Information updates in real-time.
+  ![ContactFeature](static/images/README/ContactFeature.jpg)
 
-**As a user**, I want to see the current temperature, so I know how to dress appropriately.
 
-- **Acceptance Criteria**:
-  - The temperature is displayed in degrees Celsius.
-  - The temperature updates to reflect real-time data.
+## User Authentication and Notifications
 
-**As a user**, I want to see the current weather conditions (e.g., sunny, rainy, cloudy), so I can decide if I need an umbrella or sunglasses.
+* **User Accounts**
+  * Create an account
 
-- **Acceptance Criteria**:
-  - Weather conditions are displayed using descriptive text and relevant icons.
-  - The information updates to reflect real-time conditions.
+  ![SignUp](static/images/README/SignUp.jpg)
 
-### 5-day Weather Forecast
+  * Sign in
 
-**As a user**, I want to see the temperature forecast for the next five days, so I can plan my week ahead.
+  ![SignIn](static/images/README/SignIn.jpg)
 
-- **Acceptance Criteria**:
-  - The 5-day forecast is displayed upon request.
-  - Each day's forecast includes the temperature, weather conditions, humidity, and wind speed.
-  - The forecast updates regularly to reflect accurate data.
 
-### Interactive Map
+* **Notifications**
+  * Receive notifications for:
+    * Logged in
 
-**As a user**, I want to be able to click on a map to select my location, so I can get weather data for that specific point.
+  ![logout](static/images/README/logged-in.jpg)
 
-- **Acceptance Criteria**:
-  - An interactive map is available for users to select their location.
-  - Selecting a location on the map updates the weather data to that specific point.
+    * Logged out
 
-### Integration with Weather API
+  ![Login](static/images/README/not-logged-in.jpg)
 
-**As a user**, I want the weather data to update in real-time, so I always have the latest information.
+    * Travel recommendation posts
 
-- **Acceptance Criteria**:
-  - The site pulls real-time data from a reliable weather API.
-  - Data refreshes at regular intervals to ensure accuracy.
+  ![RecommendationSubmitted](static/images/README/RecommendationSubmitted.jpg)
 
-**As a user**, I want the weather data to be accurate, so I can rely on the information provided by the site.
+  ![RecommendationUpdated](static/images/README/RecommendationUpdated.jpg)
 
-- **Acceptance Criteria**:
-  - Weather data is sourced from a trusted and reliable weather API.
-  - API error handling is implemented to manage data retrieval failures.
+  ![RecommendationDeleted](static/images/README/RecommendationDeleted.jpg)
 
-### User Interface and Experience
+    * blog comment posts
 
-**As a user**, I want the site to be visually appealing, so it's pleasant to use.
+  ![CommentSubmitted](static/images/README/CommentSubmitted.jpg)
 
-- **Acceptance Criteria**:
-  - The site's design is clean and modern with weather icons and graphics.
-  - Visual elements are aligned and consistent.
+  ![CommentUpdated](static/images/README/CommentUpdated.jpg)
 
-**As a user**, I want the weather information to be presented in a clear and easy-to-read format, so I can quickly understand the data.
-
-- **Acceptance Criteria**:
-  - Weather data is displayed in a structured and organized manner.
-  - Fonts, colors, and layout enhance readability.
-
-**As a user**, I want the site to load quickly, so I don't have to wait long to get the information I need.
-
-- **Acceptance Criteria**:
-  - The site is optimized for fast loading times.
-  - Performance is regularly monitored and improved.
-
-**As a user**, I want the site to work well on my smartphone, so I can check the weather on the go.
-
-- **Acceptance Criteria**:
-  - The site is fully responsive, adapting to various screen sizes.
-  - All functionalities work seamlessly on both desktop and mobile devices.
-
-### Site Owner Stories
-
-#### API Integration
-
-**As a site owner**, I want to integrate a reliable weather API, so I can provide accurate weather data.
-
-- **Acceptance Criteria**:
-  - The weather API is integrated and functional.
-  - API requests are managed efficiently and handle errors gracefully.
-
-#### User Interface
-
-**As a site owner**, I want to design a clean and intuitive interface, so users can easily navigate the site.
-
-- **Acceptance Criteria**:
-  - The interface is user-friendly and intuitive.
-  - Navigation is straightforward and consistent.
-
-#### Performance and Reliability
-
-**As a site owner**, I want the site to be optimized for speed, so users have a fast experience.
-
-- **Acceptance Criteria**:
-  - The site is optimized for quick load times.
-  - Regular performance checks and optimizations are in place.
-
-**As a site owner**, I want the site to be reliable and have minimal downtime, so users can access it whenever they need.
-
-- **Acceptance Criteria**:
-  - The site is hosted on a reliable platform.
-  - Downtime is minimized through regular maintenance and monitoring.
+  ![CommentDeleted](static/images/README/CommentDeleted.jpg)
 
 ---
 
-# Technologies Used
 
-- **HTML5**: For the basic structure of the app.
-- **CSS3**: For layout, color schemes, and basic styles.
-- **Bootstrap 4.6**: For responsive layout, styling, and form components.
-- **JavaScript (ES6+)**: For the dynamic weather display and API integration.
-- **GitHub Pages**: For deployment of the live app.
+## 5. Target Audience
+
+* Travel enthusiasts
+* Travel bloggers
+* Travelers seeking advice
+
+## 6. User Stories
+
+| User Story | MoSCoW | Acceptance Criteria |
+|---|---|---|
+| **Admin Features** | | |
+| Admin: Create a New Blog Post | Must Have | The admin should be able to create a new blog post with a title, content, image, and category. |
+| Admin: Edit Blog Posts | Must Have | The admin should be able to edit the title, content, image, and category of an existing blog post. |
+| Admin: Delete Blog Posts | Must Have | The admin should be able to delete a blog post and its associated comments. |
+| Admin: Moderate user comments on posts | Must Have | The admin should be able to approve, reject, or edit user comments. |
+| Admin: Moderate user recommendations for travel | Must Have | The admin should be able to approve, reject, or edit user recommendations. |
+| **User Features** | | |
+| User: View list of blog posts | Must Have | The user should be able to view a list of blog posts, sorted by date or category. |
+| User: View an Individual Blog Post | Must Have | The user should be able to view the full content of a blog post, including images and comments. |
+| User Authentication: register an account | Must Have | The user should be able to create an account with a username and password. |
+| User Authentication: log in and log out of account | Must Have | The user should be able to log in and log out of their account securely. |
+| User: Post Comments on a Blog Post | Must Have | The user should be able to post comments on blog posts, subject to moderation. |
+| User: Delete my Comments on a Blog Post | Must Have | The user should be able to delete their own comments. |
+| User: Edit my Comments on a Blog Post | Must Have | The user should be able to edit their own comments within a certain timeframe. |
+| User: Post my recommendations for travel | Must Have | The user should be able to submit travel recommendations, including destination, activities, and tips. |
+| User: Delete my recommendations for travel | Must Have | The user should be able to delete their own travel recommendations within a certain timeframe. |
+| User: Edit my recommendations for travel | Must Have | The user should be able to edit their own travel recommendations within a certain timeframe. |
+| User: View Post Excerpts | Could Have | A concise excerpt should be displayed. |
+| User: browse travel recommendations by categories (continents) | Should Have | Travel recommendations should be categorized by continent to facilitate browsing. |
+| User: e-commerce Integration | Won't Have | Not applicable. |
+| Admin: Advanced Analytics | Won't Have | Not applicable. |
 
 ---
 
-# Design Choices
+# 7. Technologies Used
+
+- **HTML5**: Used to create the templates that render the dynamic content generated by Django's views.
+- **CSS3**: Used to style templates, creating the visual layout and design of the application.
+- **Bootstrap**: Used to accelerate development creating responsive designs that adapt to different screen sizes.
+- **Python**: Used to build Django applications. handleing server-side logic, database interactions, and template rendering.
+- **JavaScript**: Used to add dynamic behavior to web pages
+- **GitHub Pages**: Used to deploy the static files generated by Django.
+- **Heroku**:  Used to deploy the Django app managing the infrastructure
+
+---
+
+# 8. Design Choices
 
 ERD design:
 
-ecotrails/destinations/models.py - ERD:
-
-+-------------------+                  +-------------------+
-| User              |                  | Destination       |
-|-------------------|                  |-------------------|
-| - id (PK)         |<------------1--->| - id (PK)         |
-| - username        |                  | - title           |
-| - email           |                  | - slug            |
-| ...               |                  | - author (FK)     |
-|                   |                  | - continent       |
-+-------------------+                  | - country         |
-                                       | - content         |
-                                       | - created_on      |
-                                       | - status          |
-                                       | - excerpt         |
-                                       | - updated_on      |
-                                       +-------------------+
-                                                   |
-                                                   N
-                                                   |
-                                                   |
-                                                   |
-                                                   |
-                                       +----------------------+
-                                       | Recommendation       |
-                                       |----------------------|
-                                       | - id (PK)            |
-                                       | - user (FK)          |
-                                       | - destination (FK)   |
-                                       | - place_name         |
-                                       | - description        |
-                                       | - created_on         |
-                                       | - approved           |
-                                       +----------------------+
-ecotrails/about/models.py - ERD:
-
-+-------------------+
-| About             |
-|-------------------|
-| - id (PK)         |
-| - title           |
-| - profile_image   |
-| - updated_on      |
-| - content         |
-+-------------------+
+![ERD](staticfiles/images/README/ERD.jpg)
 
 
 ## Color Scheme
@@ -238,12 +165,23 @@ ecotrails/about/models.py - ERD:
 ## Wireframes
 
 - Wireframes were created to design the Travel Blog layout:  
+
 ![Home_Wireframe](static/images/README/home.jpg)
+
+![Blog_Wireframe](static/images/README/blog.jpg)
+
+![Destinations_Wireframe](static/images/README/destinations.jpg)
+
+![About_Wireframe](static/images/README/about.jpg)
+
+![Contact_Wireframe](static/images/README/contact.jpg)
+
+![Mob_Wireframe](static/images/README/mob.jpg)
 
 
 ---
 
-# Testing
+# 9. Testing
 
 ## HTML Validation
 
@@ -285,21 +223,21 @@ ecotrails/about/models.py - ERD:
 
 ## Criteria met:
 
-- At least one original custom model with associated functionalities, markedly different from those present in the Hello, Django! or Codestar Blog walkthrough projects if they have been used in your project.	Answer = (ecotrails/destinations/models.py) and (ecotrails/about/models.py)
+- At least one original custom model with associated functionalities, markedly different from those present in the Hello, Django! or Codestar Blog walkthrough projects if they have been used in your project.	Status=Done: (ecotrails/destinations/models.py) and (ecotrails/about/models.py)
 	
-- At least one form on the front end, which provides either admin or regular users with CRUD functionality without having to access the admin panel. Answer = (ecotrails/destinations/forms.py) and (ecotrails/blog/forms.py)
+- At least one form on the front end, which provides either admin or regular users with CRUD functionality without having to access the admin panel. Status=Done: (ecotrails/destinations/forms.py) and (ecotrails/blog/forms.py)
 	
-- At least one UI element on the front end, which allows either admin or regular users to delete records in the database without having to access the admin panel.	Answer = (ecotrails/destinations/templates/destinations/destination_list.html) and (ecotrails/blog/templates/blog/post_detail.html)
+- At least one UI element on the front end, which allows either admin or regular users to delete records in the database without having to access the admin panel.	Status=Done: (ecotrails/destinations/templates/destinations/destination_list.html) and (ecotrails/blog/templates/blog/post_detail.html)
 	
-- Evidence of agile methodologies followed during the development of your project in the GitHub repository.	Answer = ecotrails/static/images/README/Agile Planning.jpg
+- Evidence of agile methodologies followed during the development of your project in the GitHub repository.	Status=Done: ecotrails/static/images/README/Agile Planning.jpg
 	
-- DEBUG mode set to False.	Answer: DEBUG = False
+- DEBUG mode set to False.	Status=Done: DEBUG = False
 	
-- Working functionality for users to register and log in and out of the application without issues.	Answer = (django.contrib.auth.models import User)
+- Working functionality for users to register and log in and out of the application without issues.	Status=Done: (django.contrib.auth.models import User)
 	
-- Detailed testing write ups, beyond results of validation tools.	Answer = inc testing against user story compliance
+- Detailed testing write ups, beyond results of validation tools.	Status=Done: inc testing against user story compliance
 
-## Accessibility
+## Accessibility testing
 
 - Google Lighthouse audit reports an accessibility score of 87%, ensuring users with disabilities can access the site effectively.
 
