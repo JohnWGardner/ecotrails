@@ -220,3 +220,7 @@ h1 {
 .approval {
     color: rgb(222, 146, 168);
 }
+
+body.d-flex.flex-column.h-100.main-bg {
+    color: #f0ffff;
+}
