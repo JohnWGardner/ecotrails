@@ -5,6 +5,8 @@
 **Cohort:** WECA - Full Stack Software Developer: Skills Bootcamp  
 **Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django
 
+**NB** Superuser details below as instructed by Alex Tastad
+
 ---
 # **EcoTrails**
 
@@ -14,12 +16,19 @@
 
 <br> 
 
+## **Superuser account**
+
+  - Username: g
+  - Password: {G[@YLw:Zesh4N1
+<br>
+<br>
+
 ## **URL's**
 
-   - **Home Page** https://ecotrails-54f65842ae68.herokuapp.com
-   - **Admin Page** https://ecotrails-54f65842ae68.herokuapp.com/admin/
-   - **Github repository** https://github.com/JohnWGardner/ecotrails
-   - **Github project** https://github.com/users/JohnWGardner/projects/8
+  - **Home Page** https://ecotrails-54f65842ae68.herokuapp.com
+  - **Admin Page** https://ecotrails-54f65842ae68.herokuapp.com/admin/
+  - **Github repository** https://github.com/JohnWGardner/ecotrails
+  - **Github project** https://github.com/users/JohnWGardner/projects/8
 
 <br>
 <br>
