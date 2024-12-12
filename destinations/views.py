@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Destination, Recommendation
 from .forms import RecommendationForm
 
+
 def destination_list(request):
     destinations = Destination.objects.filter(status=1).order_by('-created_on')  # Fetch all published destinations, ordered by creation date
     destinations_by_continent = {}  # This is a little different as I want to group destinations by continent.I'm having to set an empty dictionary to hold destinations grouped by continent
@@ -39,6 +40,7 @@ def destination_list(request):
         },
     )
 
+
 def destination_detail(request, slug):
     queryset = Destination.objects.filter(status=1)  # get all published destinations
     destination = get_object_or_404(queryset, slug=slug)  # get the destination by slug or return 404 if not found
@@ -65,6 +67,7 @@ def destination_detail(request, slug):
             "recommendation_form": recommendation_form,  # pass the recommendation form to the template
         },
     )
+
 
 def recommendation_edit(request, recommendation_id):
     """
