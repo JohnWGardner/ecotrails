@@ -320,6 +320,8 @@ The code has been tested and successfully validated though:
 
 - Editing and deleting Travel Recomendations: Getting the functionality correct for editing and deleting travel recommendations too many bugs to list as it was not as easy as I originally thought as I couldn't refer to the recommendation via slug as other lessons had shown me. I needed to target the element ID. I remembered that I could make id(pk) visible in the admin panel. Then started the logic of understanding how to target id to the edit recommendations, this was done through recommendations.js, HTML and view.py
 
+- The use of dark reader caused issues when testing on all devices, had to redo all CSS at last min, i'm hopefull i've caught all restyling issues
+
 # Deployment
 
 **Deploying to Heroku**

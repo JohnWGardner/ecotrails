@@ -188,6 +188,10 @@ body {
     background: #E84610;
 }
 
+.modal-content {
+    color: #000000;
+}
+
 .btn-like:hover,
 .btn-like:active {
     color: #E84610;
