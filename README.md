@@ -2,7 +2,7 @@
 
 **Students:** John Gardner  
 **Date:** 25/11/2024  
-**Cohort:** WECA - Full Stack Software Developer: Skills Bootcamp  
+**Cohort:** CI - Full Stack Software Developer: Skills Bootcamp  
 **Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django
 
 ---
