@@ -1,8 +1,6 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
-
-**Student:** John Gardner  
-**Date:** 25/11/2024  
-**Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django - Skills Bootcamp
+**Name:** John Gardner  
+**Date:** 12/12/2024  
+**Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django - Code Institute Skills Bootcamp
 
 ---
 # **EcoTrails**
