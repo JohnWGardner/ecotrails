@@ -1,9 +1,8 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-**Students:** John Gardner  
+**Student:** John Gardner  
 **Date:** 25/11/2024  
-**Cohort:** CI - Full Stack Software Developer: Skills Bootcamp  
-**Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django
+**Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django - Skills Bootcamp
 
 ---
 # **EcoTrails**
