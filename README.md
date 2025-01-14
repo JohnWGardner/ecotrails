@@ -1,5 +1,5 @@
 **Name:** John Gardner  
-**Date:** 12/12/2024  
+**Date:** 06/12/2024  
 **Project:** Travel Blog: HTML, CSS, Bootstrap, JS, Python, Django - Code Institute Skills Bootcamp
 
 ---
