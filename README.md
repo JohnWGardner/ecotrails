@@ -251,9 +251,6 @@ The code has been tested and successfully validated though:
 ### Python Linter - Status=Passed, 
 - I needed to remove comments to pass, as they are lengthy and exceeded 79 chars. These have been put back in as useful to my learning
 
-![DestinationLinter](static/images/README/DestinationLinter.jpg)
-
-![BlogPostLinter](static/images/README/BlogPostLinter.jpg)
 
 ## Manual Testing against User Story acceptance:
 
