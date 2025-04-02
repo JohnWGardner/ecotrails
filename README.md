@@ -365,8 +365,3 @@ The steps I took to deploy Django project to Heroku:
 - **Font Awesome**: For fonts.
 - **Favicon**: For favicon image.
 - **Freepik**: For hero image.
-
-# Thanks
-
-- My thanks to Alex, Kevin and John in CI for there support and guidance thoughout
----
